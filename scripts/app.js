@@ -65,7 +65,7 @@ var app = {
 
     deviceMove: function (a) {
                
-        this.body[0].style.backgroundColor = "rgb(" + (a.gamma * 2) + "," + (a.beta * 3) + "," + + (a.gamma * 2) + ")";
+        this.body[0].style.backgroundColor = "rgb(" + (a.gamma) + "," + (a.beta) + "," + + (a.gamma) + ")";
 
         this.target.x = a.gamma * 2; //exaggeration 
         this.target.y = a.beta * 3;
@@ -87,7 +87,7 @@ var app = {
                     x:this.curPos.x,
                     y:this.curPos.y,                                    
                 });
-        TweenLite.set(this.flare, 
+        TweenLite.set(this.body, 
                 {
                     x:-this.curPos.x,
                     y:-this.curPos.y,                                    
