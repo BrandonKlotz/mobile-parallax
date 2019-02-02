@@ -23,75 +23,12 @@ html,body {
   overflow: hidden;
 }
 
-/* .flare{
-  width: 110%;
-  height: 110%;
-  top:-10%;
-  left:-10%;
-  opacity: .66;
-  position: absolute;
-  background-image: url(../img/flare.png);
-  background-size: cover;
-  z-index: 4;
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-} */
-
- .truth-logo{
-    position: absolute;
-    z-index: 2;
-    background-image: url(../img/logo.svg);    
-    background-repeat: no-repeat;
-    width:149.855px;
-    height:95.509px;    
-    top:30px;
-    right: 20px;
-    opacity: .6;    
-    z-index: 5;
-     -webkit-transition: opacity .15s ease-in-out;
-        -moz-transition: opacity .15s ease-in-out;
-        -ms-transition: opacity .15s ease-in-out;
-        -o-transition: opacity .15s ease-in-out;
-        transition: opacity .15s ease-in-out;
- }
- .truth-logo:hover{
-    
-    opacity: 1;
-    cursor: pointer;
-
- }
-
-  .text1{
-    position: absolute;
-    z-index: 2;
-    background-image: url(../img/text1.svg);    
-    background-repeat: no-repeat;
-    width: 349.109px;
-    height: 221.588px;    
-    bottom: 300px;
-    left:125px;
- } 
-
- .text2{
-    position: absolute;
-    z-index: 2;
-    background-image: url(../img/text2.svg);    
-    background-repeat: no-repeat;
-    width:531.743px;
-    height:139.06px;    
-    bottom:75px;
-    left: 125px;
- }
-
 .parallaxBG{
-  
   position: absolute;  
-  background-image: url(../img/ripple.svg);
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  
-    
+  background-image: url(../img/shape.svg);
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) { 

@@ -54,8 +54,7 @@ var app = {
     },
     mouseMove: function (e) {
 
-        this.body[0].style.backgroundColor = "rgb(" + (e.pageX - this.midpoint.x) + "," + (e.pageY - this.midpoint.y) + "," + + (e.pageX - this.midpoint.x) + ")";
-        // this.body[0].style.backgroundImage = "linear-gradient(rgb(" + e.pageX + ", #" + e.pageY + ", #" + e.pageX + "), rgb(" + e.pageY + "," + e.pageX + "," + e.pageY + "))";       
+        this.body[0].style.backgroundImage = "linear-gradient(" + ((e.pageX / 4) - (e.pageY / 4)) + "deg, midnightblue, purple, teal)";       
         
         this.target.x = -(e.pageX - this.midpoint.x) / this.limit.x;
         this.target.y = -(e.pageY - this.midpoint.y) / this.limit.y;
@@ -65,7 +64,7 @@ var app = {
 
     deviceMove: function (a) {
                
-        this.body[0].style.backgroundColor = "rgb(" + (a.gamma) + "," + (a.beta) + "," + + (a.gamma) + ")";
+        this.body[0].style.backgroundImage = "linear-gradient(" + (a.gamma - 100) + "deg, rgb(" + (a.beta - 100) + "," + (a.gamma - 100) + "," + (a.gamma - 500) + "), rgb(" + (a.gamma - 100) + "," + (a.beta - 100) + "," + (a.beta - 500) + "))";       
 
         this.target.x = a.gamma * 2; //exaggeration 
         this.target.y = a.beta * 3;
@@ -86,11 +85,6 @@ var app = {
                 {
                     x:this.curPos.x,
                     y:this.curPos.y,                                    
-                });
-        TweenLite.set(this.body, 
-                {
-                    x:-this.curPos.x,
-                    y:-this.curPos.y,                                    
                 });
     },
 
