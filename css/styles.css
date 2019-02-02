@@ -26,9 +26,9 @@ html,body {
 .parallaxBG{
   position: absolute;  
   background-image: url(../img/shape.svg);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) { 

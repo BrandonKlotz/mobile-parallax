@@ -64,7 +64,7 @@ var app = {
 
     deviceMove: function (a) {
                
-        this.body[0].style.backgroundImage = "linear-gradient(" + (a.gamma - 100) + "deg, rgb(" + (a.beta - 100) + "," + (a.gamma - 100) + "," + (a.gamma - 500) + "), rgb(" + (a.gamma - 100) + "," + (a.beta - 100) + "," + (a.beta - 500) + "))";       
+        this.body[0].style.backgroundImage = "linear-gradient(" + ((a.gamma / 2) - (a.beta / 2)) + "deg, midnightblue, purple, teal)";       
 
         this.target.x = a.gamma * 2; //exaggeration 
         this.target.y = a.beta * 3;
